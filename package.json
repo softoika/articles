@@ -1,0 +1,10 @@
+{
+  "name": "articles",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ryo Hanafusa",
+  "license": "MIT",
+  "dependencies": {
+    "zenn-cli": "^0.1.50"
+  }
+}
