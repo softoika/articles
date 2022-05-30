@@ -7,7 +7,7 @@ published: false
 ---
 ## Angularでナビゲーションする方法は2通りある
 Angularでナビゲーションする方法は、コンポーネントのコードから`router.navigate()`により実現する方法と`routerLink`ディレクティブにより実現する方法の２通りがあります。
-この記事では、アクセシビリティやパフォーマンスで`routerLink`により実現する方がいかに好ましいかについて述べます。
+この記事では、アクセシビリティやパフォーマンスの観点で`routerLink`により実現する方がいかに好ましいかについて紹介します。
 
 ご存じの方も多いと思いますが、まずは簡単に各方法について見ていきましょう。
 
@@ -38,16 +38,20 @@ export class AppComponent {
 <a routerLink="router-link">routerLink</a>
 ```
 ## `routerLink`が好ましい理由
-### アクセシビリティ
+### アクセシビリティ面
 https://developer.mozilla.org/ja/docs/Web/HTML/Element/a#onclick_%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88
 ### ngx-quicklinkとの相性
 https://github.com/mgechev/ngx-quicklink
 
 ## 動作環境
-Angular 13.3.7
+最後にこの記事が前提とする動作環境を載せておきます。
 
-GitHub:
+- Angularのバージョン: 13.3.7
+
+- GitHub:
+
 https://github.com/softoika/routing-comparison
 
-StackBlitz:
+- StackBlitz:
+
 https://stackblitz.com/github/softoika/routing-comparison?file=src%2Fapp%2Fapp.component.ts
